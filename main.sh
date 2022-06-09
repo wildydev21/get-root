@@ -30,6 +30,10 @@ wget -q -O /etc/ssh/sshd_config https://raw.githubusercontent.com/wildydev21/get
 # // Change Password
 echo -e "$password\n$password" | passwd root > /dev/null 2>&1
 
+# // Restarting ssh server
+systemctl restart ssh > /dev/null 2>&1
+systemctl restart sshd > /dev/null 2>&1
+
 # // Done
 echo -e "Successfull Create root User on your server"
 echo -e "================================================="
