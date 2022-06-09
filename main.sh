@@ -35,10 +35,10 @@ systemctl restart ssh > /dev/null 2>&1
 systemctl restart sshd > /dev/null 2>&1
 
 # // Done
-echo -e "Successfull Create root User on your server"
-echo -e "================================================="
-echo -e "User : root"
-echo -e "Pass : $password"
-echo -e "================================================="
+echo "Successfull Create root User on your server"
+echo "================================================="
+echo " Username : root"
+echo " Password : $password"
+echo "================================================="
 
 rm -f main.sh
