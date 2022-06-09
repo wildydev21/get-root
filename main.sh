@@ -10,6 +10,7 @@ if [[ "${EUID}" -ne 0 ]]; then
 fi
 
 # // Input
+sleep 1
 clear
 echo "Welcome to WildyDev21 Script"
 echo ""
